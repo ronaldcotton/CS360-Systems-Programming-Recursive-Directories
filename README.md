@@ -1,6 +1,6 @@
 # WSU Vancouver - CS360 - File Systems
 ## Systems Programming - Assignment 3 - reading files recusively
-## C/Network Program
+## C/File System Recusion Program
 ### Abstract
 This program does the following:
  - Takes one or zero command line arguments.
@@ -10,15 +10,15 @@ This program does the following:
  - No order is defined for the pathnames that are output.
 
 Other:
- - Ignore symbolic links (Why?) - Symbolic link loop - Symoblic link to parent directory
+ - Ignore symbolic links **(Why?)** - *Symbolic link loop - Symoblic link to parent directory*
 
 C Functions Used:
- - chmod - change directory
- - access - check user's permissions for a file
- - opendir - open a directory
- - readdir - read a directory
- - closedir - close a directory
- - lstat - get file status
+ - chmod *- change directory*
+ - access *- check user's permissions for a file*
+ - opendir *- open a directory*
+ - readdir *- read a directory*
+ - closedir *- close a directory*
+ - lstat *- get file status*
 
 
 ### Requirements
@@ -35,4 +35,4 @@ C Functions Used:
 ```
 
 ### Note
-Better solutions exist, but constrained because of the restrictions of the assignment.  Modern methods of file traversing can be found online, but **_BSD_SOURCE** traversial is not recommended for production code.
+Better solutions exist, but constrained because of the restrictions of the assignment.  Modern methods of file traversing can be found online, **_BSD_SOURCE** traversial is not recommended nor safe for production code.
